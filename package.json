@@ -1,0 +1,31 @@
+{
+  "name": "signin-with-selorax",
+  "version": "1.0.0",
+  "description": "Sign in with SeloraX — OIDC client SDK for Node.js and browser",
+  "main": "index.js",
+  "browser": "frontend/selorax-signin.js",
+  "files": [
+    "index.js",
+    "lib/",
+    "frontend/",
+    "logo.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "selorax",
+    "oidc",
+    "oauth",
+    "sign-in",
+    "sso",
+    "openid-connect"
+  ],
+  "author": "zaynmiraj",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaynmiraj/signin-with-selorax"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
