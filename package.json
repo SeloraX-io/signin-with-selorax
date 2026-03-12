@@ -1,5 +1,5 @@
 {
-  "name": "signin-with-selorax",
+  "name": "@selorax/signin",
   "version": "1.0.1",
   "description": "Sign in with SeloraX — OIDC client SDK for Node.js and browser",
   "main": "index.js",
