@@ -1,0 +1,52 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "aws-sdk"
+      - dependency-name: "@aws-sdk/*"
+      - dependency-name: "@smithy/*"
+      - dependency-name: "aws-cdk"
+      - dependency-name: "@aws-cdk/*"
+      - dependency-name: "@google-cloud/storage"
+      - dependency-name: "minio"
+      - dependency-name: "multer-s3"
+      - dependency-name: "cloudinary"
+      - dependency-name: "firebase-admin"
+      - dependency-name: "mysql"
+      - dependency-name: "mysql2"
+      - dependency-name: "pg"
+      - dependency-name: "pg-*"
+      - dependency-name: "mariadb"
+      - dependency-name: "mssql"
+      - dependency-name: "tedious"
+      - dependency-name: "oracledb"
+      - dependency-name: "mongodb"
+      - dependency-name: "mongoose"
+      - dependency-name: "redis"
+      - dependency-name: "ioredis"
+      - dependency-name: "sqlite3"
+      - dependency-name: "better-sqlite3"
+      - dependency-name: "cassandra-driver"
+      - dependency-name: "prisma"
+      - dependency-name: "@prisma/*"
+      - dependency-name: "sequelize"
+      - dependency-name: "sequelize-typescript"
+      - dependency-name: "typeorm"
+      - dependency-name: "drizzle-orm"
+      - dependency-name: "drizzle-kit"
+      - dependency-name: "@mikro-orm/*"
+      - dependency-name: "objection"
+      - dependency-name: "knex"
+      - dependency-name: "bookshelf"
